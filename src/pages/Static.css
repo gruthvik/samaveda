@@ -1,0 +1,117 @@
+/* src/pages/Home.css */
+.lightblue-home-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #dbeafe, #bfdbfe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.cosmic-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.samaveda-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+  color: #334155;
+}
+
+.button-group-centered {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.action-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button.login {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.action-button.login:hover {
+  background-color: #1e40af;
+}
+
+.action-button.register {
+  background-color: white;
+  color: #1e3a8a;
+  border: 2px solid #1e3a8a;
+}
+
+.action-button.register:hover {
+  background-color: #e0f2fe;
+}
+
+/* Scrollable Feature Sections */
+.feature-section {
+  max-width: 800px;
+  background: white;
+  color: #1e293b;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.feature-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.feature-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.feature-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+

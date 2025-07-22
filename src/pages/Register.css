@@ -1,0 +1,78 @@
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#aeccee, #aeccee); /* Same background */
+  }
+  
+  .gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Adds some space between GIF and form */
+  }
+  
+  .register-gif {
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .register-card {
+    background: rgba(226, 222, 222, 0.9);
+    width: 320px; /* Previously 320px */
+    padding: 50px 40px; /* Make the box bigger */
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+  }
+  
+  .register-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .register-input {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .register-input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(45deg, #28a745, #95e2a6);
+    transition: 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background: linear-gradient(45deg, #218838, #1e7e34);
+  }
+  

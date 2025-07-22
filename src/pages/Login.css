@@ -1,0 +1,101 @@
+/* Elegant Login.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #aeccee, #aeccee );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row; /* Change from column to row */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px; /* spacing between gif and card */
+    padding: 0 40px;
+}
+
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 'left' is not a valid value here */
+    transform: translateX(-75px); /* move it 50px to the left */
+}
+  
+  .login-gif {
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  
+.login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+.login-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #140b0b;
+}
+
+.login-input {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+.login-input:focus {
+    border-color: #0078ff;
+    box-shadow: 0 0 8px rgba(0, 120, 255, 0.2);
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-button.login {
+    background: linear-gradient(45deg, #0078ff, #00c6ff);
+    color: white;
+}
+
+.login-button.login:hover {
+    background: linear-gradient(45deg, #005bb5, #0099cc);
+}
+
+.login-button.register {
+    background: linear-gradient(45deg, #30db4d, #aed6b0);
+    color: white;
+}
+
+.login-button.register:hover {
+    background: linear-gradient(45deg, #4e555b, #5c636a);
+}
